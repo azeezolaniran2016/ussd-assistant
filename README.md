@@ -1,2 +1,2 @@
-# ussd-assistant
-A simple USSD service
+# Ussd Assistant
+This is a simple ussd assistant app.
