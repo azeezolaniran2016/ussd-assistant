@@ -1,0 +1,36 @@
+html {
+    /* To make use of full height of page*/
+    min-height: 100%;
+    margin: 0;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+  margin-top: 60px;
+  margin-bottom: 110px
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .container {
+    margin-top: 120px;
+    margin-bottom: 120px
+  } 
+}
+
+.active-link {
+  color: #ffffff
+}
+
+footer {
+  background: #000034;
+  position: fixed;
+  padding: 20px;
+  bottom: 0px;
+  width: 100%;
+}
