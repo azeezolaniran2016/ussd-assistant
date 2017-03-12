@@ -6,6 +6,7 @@ import bodyParser from 'body-parser';
 import morgan from 'morgan';
 import logger from 'fm-log';
 import path from 'path';
+import favicon from 'serve-favicon';
 import devConfig from './devConfig';
 
 const app = express();
@@ -14,6 +15,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(morgan('tiny'));
+app.use(favicon(path.join(__dirname, '../../public', 'favicon.ico')));
 
 // point to our static folder
 app.use(express.static(path.join(__dirname, '../../public')));
