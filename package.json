@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "A simple USSD app",
   "scripts": {
-    "start": "npm run transpile:server && node ./dist/app.js",
+    "start": "node ./dist/app.js",
     "start:devserver": "NODE_ENV=development nodemon ./server/app.js --exec babel-node",
     "transpile:server": "rimraf dist && babel server --out-dir dist",
     "build": "webpack"
