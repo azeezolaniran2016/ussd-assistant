@@ -14,6 +14,10 @@ module.exports = {
         loaders: ['babel-loader']
       },
       {
+        test: /\.ico$/,
+        loaders: ['file-loader?name=[name].[ext]']
+      },
+      {
         test: /\.css$/,
         loaders: ['style-loader', 'css-loader']
       },

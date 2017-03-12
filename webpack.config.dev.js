@@ -38,6 +38,10 @@ module.exports = {
         loaders: ['style-loader', 'css-loader']
       },
       {
+        test: /\.ico$/,
+        loaders: ['file-loader?name=[name].[ext]']
+      },
+      {
         test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
         loaders: ['file-loader']
       },
