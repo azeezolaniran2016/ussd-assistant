@@ -49,7 +49,7 @@ if (process.env.NODE_ENV === 'development') {
 
 // lets define our catch all route for now to send our single page app
 app.get('*', function (request, response) {
-  response.sendFile(_path2.default.join(__dirname, '../../public/index.html'));
+  response.sendFile('index.html');
 });
 
 // error handler
