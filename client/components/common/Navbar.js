@@ -9,6 +9,7 @@ const Navbar = () => {
 					<Link className="navbar-brand active" to="/">USSD Assistant</Link>
 				</div>
 				<ul className="nav navbar-nav navbar-right">
+					<li><Link to="about" onlyActiveOnIndex activeClassName="active">About</Link></li>
 					<li><Link to="privacy" onlyActiveOnIndex activeClassName="active">Privacy Policy</Link></li>
 				</ul>
 			</div>
