@@ -25,7 +25,7 @@ if (process.env.NODE_ENV === 'development') {
 // lets define our catch all route for now to send our single page app
 app.get('*', (request, response) => {
   response.sendFile(path.join(__dirname, '../../public/index.html'));
-})
+});
 
 // error handler
 app.use('*', (error, request, response, next) => {
