@@ -5,12 +5,14 @@ import HomePage from './components/home/HomePage';
 import PrivacyPage from './components/privacy/PrivacyPage';
 import AboutPage from './components/about/AboutPage';
 import PageNotFound from './components/404/PageNotFound';
+import HelpPage from './components/help/HelpPage';
 
 export default (
   <Route path="/" component={App}>
     <IndexRoute component={HomePage} />
     <Route path="privacy" component={PrivacyPage} />
     <Route path="about" component={AboutPage} />
+    <Route path="help" component={HelpPage} />
     <Route path="*" component={PageNotFound} />
   </Route>
 );
