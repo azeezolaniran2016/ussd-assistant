@@ -7,7 +7,7 @@ class App extends Component {
     return (
       <div>
         <Navbar />
-        <div className="container">
+        <div className="container-fluid">
           <div className="row">
             <div className="col-sm-2">
             </div>
