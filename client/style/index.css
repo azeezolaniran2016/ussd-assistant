@@ -30,3 +30,8 @@ footer {
 .warning {
   color: #ff0909
 }
+
+.text-highlight {
+  color: #33ffff;
+  font-weight: 10
+}

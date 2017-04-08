@@ -10,10 +10,10 @@ const compiler = webpack(config);
  * @param {Object} app - express app
  * @returns {undefined} - returns undefined
  */
-export default function (app) {
+export default (app) => {
   app.use(webpackDevMiddleware(compiler, {
     noInfo: true,
     publicPath: config.output.publicPath
   }));
   app.use(webpackHotMiddleware(compiler));
-}
+};

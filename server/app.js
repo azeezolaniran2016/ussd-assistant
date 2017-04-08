@@ -2,7 +2,7 @@ import logger from 'fm-log';
 import app from './config/server';
 
 
-const port = process.env.PORT || 9001
+const port = process.env.PORT || 9001;
 app.listen(port, (error) => {
   if (error) {
     logger.error(`Error occured while starting server: ${error}`);
