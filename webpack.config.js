@@ -9,14 +9,17 @@ module.exports = {
   },
   plugins: [
     new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery"
+      $: 'jquery',
+      jQuery: 'jquery'
     })
   ],
+  resolve: {
+    extensions: ['', '.js', '.jsx']
+  },
   module: {
     loaders: [
       {
-        test: /\.js$/,
+        test: /(\.js$|\.jsx$)/,
         loaders: ['babel-loader']
       },
       {
@@ -39,9 +42,10 @@ module.exports = {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
         loaders: ['url-loader?limit=10000&mimetype=image/svg+xml']
       }
-    ]},
-    stats: {
-      colors: true
-    },
-    devtool: 'source-map'
-  };
+    ]
+  },
+  stats: {
+    colors: true
+  },
+  devtool: 'source-map'
+};

@@ -6,7 +6,8 @@
     "start": "npm run transpile:server && node ./dist/app.js",
     "start:devserver": "NODE_ENV=development nodemon ./server/app.js --exec babel-node",
     "transpile:server": "rimraf dist && babel server --out-dir dist",
-    "build": "webpack"
+    "build": "webpack",
+    "lint": "./node_modules/eslint/bin/eslint.js ./ -- --watch"
   },
   "dependencies": {
     "babel-loader": "^6.4.0",
@@ -31,6 +32,11 @@
   },
   "devDependencies": {
     "css-loader": "^0.27.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
     "file-loader": "^0.10.1",
     "nodemon": "^1.11.0",
     "style-loader": "^0.13.2",
