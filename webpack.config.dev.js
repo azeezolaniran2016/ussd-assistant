@@ -30,10 +30,13 @@ module.exports = {
       jQuery: 'jquery'
     })
   ],
+  resolve: {
+    extensions: ['', '.js', '.jsx']
+  },
   module: {
     loaders: [
       {
-        test: /\.js$/,
+        test: /(\.js$|\.jsx$)/,
         include: path.join(__dirname, 'client'),
         loaders: ['babel-loader']
       },
